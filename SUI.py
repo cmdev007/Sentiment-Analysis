@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 URL = st.text_input("Enter youtube URL", "")
 os.system("rm sentData.txt")
 if st.button('Start Mining'):
-    os.system("chmod +x start-vsm.sh")
-    os.system(f"./start-vsm.sh '{URL}'&")
+    #os.system("chmod +x start-vsm.sh")
+    os.system(f"youtube-dl '{URL}' -o - | ffmpeg -i - -f wav - | pv | python3 sentiment-vsm.py&")
 
 
     chart = st.empty()
