@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 URL = st.text_input("Enter youtube URL", "")
 os.system("rm sentData.txt")
 if st.button('Start Mining'):
+    os.system("chmod +x start-vsm.sh")
     os.system(f"./start-vsm.sh '{URL}'&")
 
 
