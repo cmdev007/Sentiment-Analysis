@@ -5,6 +5,20 @@ import pandas as pd
 import numpy as np
 import time, os
 import matplotlib.pyplot as plt
+import speech_recognition as sr
+import sys
+import os
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+from nltk import pos_tag
+from textblob import TextBlob
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import subprocess
+
 
 URL = st.text_input("Enter youtube URL", "")
 os.system("rm sentData.txt")
