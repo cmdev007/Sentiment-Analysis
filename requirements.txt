@@ -6,3 +6,4 @@ pandas==1.2.3
 streamlit==0.80.0
 matplotlib==3.3.4
 scikit_learn==0.24.2
+tensorflow-gpu==2.4.1
