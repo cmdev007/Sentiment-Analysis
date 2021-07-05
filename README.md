@@ -1,6 +1,6 @@
 # Sentiment-Analysis (Emotion Detection)
 
-![](https://media.giphy.com/media/jagCOBe11uybnW63c1/giphy.gif)
+![](https://github.com/cmdev007/Sentiment-Analysis/raw/main/images/analyzing_text.GIF)
 
 ![](https://github.com/cmdev007/Sentiment-Analysis/raw/main/images/figure6.png)
 
